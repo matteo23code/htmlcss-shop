@@ -6,22 +6,29 @@
 
 .container{
   margin: 0 auto;
-  background: red;
   width: 1200px;
   position: relative;
 }
 
 .row-image{
-  background: blue;
-  width: 1000px;
+  width: 909px;
   position: relative;
   left:100px;
-  border: 1px solid black;
 }
 
 .image{
-  background: green;
+  position: relative;
   width: 300px;
-  height: 400px;
   display:inline-block;
+}
+
+#badge{
+  background: green;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image:nth-child(2) #badge{
+  background: red;
 }
